@@ -1,0 +1,137 @@
+:root {
+    --primary-bg-color: #9dc19d;
+    --secondary-bg-color: #d3d5b0;
+    --text-color: #50302cf7;
+    --link-color: white;
+    --link-hover-color: #ac956f;
+    --footer-hover-color: #443829;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover > a {
+    background-color: var(--link-hover-color);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    display: flex; /* Asegúrate de que se muestre horizontalmente */
+}
+
+nav ul ul li {
+    display: inline-block; /* Alinea en fila */
+    width: auto; /* Ancho automático */
+}
+
+nav ul ul a {
+    padding: 10px 15px; /* Espaciado ajustado */
+    color: var(--link-color);
+}
+
+/* Mostrar el submenú al hacer hover sobre el elemento padre */
+nav ul li:hover > ul {
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#footer_section {
+    background-color: var(--primary-bg-color);
+    color: var(--link-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer_section nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#footer_section ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+#footer_section ul li {
+    margin-left: 10px;
+}
+
+#footer_section ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+#footer_section ul li a:hover {
+    color: var(--footer-hover-color);
+}
+
+.pie_pagina {
+    font-size: small;
+    text-align: right;
+    margin-left: auto;
+    flex-grow: 1;
+}
+
+#frame_cabecera, #frame_pie-pagina {
+    z-index: 2;
+}
+
+#frame_cuerpo {
+    z-index: 0;
+}
