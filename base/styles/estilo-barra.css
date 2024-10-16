@@ -37,6 +37,37 @@ nav ul {
     display: flex;
 }
 
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300px); 
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(0); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(-150px); 
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0); 
+    }
+}
+
 nav ul li {
     position: relative;
 }
@@ -48,37 +79,50 @@ nav ul li a {
     font-size: 16px;
     padding: 20px;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-nav ul li:hover > a {
-    background-color: var(--link-hover-color);
-}
 
 nav ul ul {
     display: none;
     position: absolute;
-    left: 0;
+    left: -50px; 
+    bottom: 10px;
+    text-align: center;
     background-color: var(--primary-bg-color);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 0;
-    display: flex; /* Asegúrate de que se muestre horizontalmente */
+    opacity: 0; 
+}
+
+
+.epocas-menu:focus-within > a {
+    animation: moveLeft 0.5s forwards;
+}
+
+.epocas-menu:focus-within > ul {
+    display: flex;
+    animation: slideIn 0.5s forwards;
+}
+
+nav ul ul a:focus {
+    outline: none; 
+}
+nav ul ul a:hover{
+    color: var(--footer-hover-color);
+}
+nav ul li a:hover{
+    color: var(--footer-hover-color);
 }
 
 nav ul ul li {
-    display: inline-block; /* Alinea en fila */
-    width: auto; /* Ancho automático */
+    display: inline-block;
+    width: 100px;
 }
 
 nav ul ul a {
-    padding: 10px 15px; /* Espaciado ajustado */
+    padding: 10px 15px;
     color: var(--link-color);
-}
-
-/* Mostrar el submenú al hacer hover sobre el elemento padre */
-nav ul li:hover > ul {
-    display: flex;
+    transition: color 0.3s ease;
 }
 
 main {
