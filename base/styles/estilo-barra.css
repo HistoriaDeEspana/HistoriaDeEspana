@@ -32,7 +32,7 @@ nav {
     padding: 0 20px;
 }
 
-nav ul {
+nav > ul {
     list-style: none;
     display: flex;
 }
@@ -68,11 +68,11 @@ nav ul {
     }
 }
 
-nav ul li {
+nav > ul > li {
     position: relative;
 }
 
-nav ul li a {
+nav > ul > li a {
     color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
@@ -116,7 +116,8 @@ nav ul li a:hover{
 
 nav ul ul li {
     display: inline-block;
-    width: 100px;
+    height: 100%;
+    width: fit-content;
 }
 
 nav ul ul a {
@@ -178,4 +179,26 @@ main {
 
 #frame_cuerpo {
     z-index: 0;
+}
+.iframe-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+#frame_cabecera {
+    height: 80px;
+}
+
+#frame_cuerpo {
+    flex-grow: 1;
+}
+
+#frame_pie-pagina {
+    height: 120px;
 }

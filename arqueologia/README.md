@@ -3,5 +3,6 @@
 - Jose Correa Fadis
 - Ana Inés Rodríguez Benitez
 - Javier Núñez Tabales
+- Rodrigo Bueno Cavacasillas
 
 Nota: He cambiado la estructura para que concuerde con lo que Hugo ha pedido, los txt y el html están en content

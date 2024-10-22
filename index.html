@@ -1,27 +1,29 @@
-    <!DOCTYPE html>
-    <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HistoriaDeExtremadura</title>
-        <link rel="stylesheet" href="./base/styles/estilo-barra.css">
-        <link rel="icon" href="./base/img/cardo-icon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-    </head>
-
-    <frameset rows="80, *, 120" class="posicion_body">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistoriaDeExtremadura</title>
+    <link rel="stylesheet" href="./base/styles/estilo-barra.css">
+    <link rel="icon" href="./base/img/cardo-icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para organizar los iframes */
         
-        <frame id="frame_cabecera" scrolling="no" frameborder="0" noresize src="./base/header.html">
+    </style>
+</head>
 
-        <frame id="frame_cuerpo" name="frameInicioContenido" frameborder="0" noresize src="./inicio.html">
+<body>
+    <div class="iframe-container">
+        <iframe id="frame_cabecera" scrolling="no" src="./base/header.html"></iframe>
+        <iframe id="frame_cuerpo" name="frameInicioContenido" src="./inicio.html"></iframe>
+        <iframe id="frame_pie-pagina" scrolling="no" src="./base/footer.html"></iframe>
+    </div>
+</body>
 
-        <frame id="frame_pie-pagina" scrolling="no" frameborder="0" noresize src="./base/footer.html">
-        
-    </frameset>
-    </html>
+</html>
