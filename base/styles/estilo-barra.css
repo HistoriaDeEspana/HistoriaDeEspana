@@ -94,6 +94,10 @@ nav ul ul {
     opacity: 0; 
 }
 
+#botonesEscondidos
+{
+    padding: 5px;
+}
 
 .epocas-menu:focus-within > a {
     animation: moveLeft 0.5s forwards;
