@@ -5,7 +5,6 @@
 
 body {
     width: 100%;
-    background-color: antiquewhite;
 }
 
 .container{
@@ -13,12 +12,12 @@ body {
     margin-bottom: 10px;
     width: 99%;
     margin: auto;
+    background-color: rgba(245, 245, 220, 0.301);
 }
 .section-obras-maestras {
     /* border: 1px solid red; */
     margin: 10px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
 }
 
 .section-obras-maestras h2 {
