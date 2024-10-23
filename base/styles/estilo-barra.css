@@ -202,7 +202,6 @@ iframe {
 #frame_cuerpo {
     flex-grow: 1;
     align-items: center;
-    padding: 0px 300px;
 }
 
 #frame_pie-pagina {
