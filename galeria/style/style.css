@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: calc(100% - 2px);
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    width: calc(80% - 24px);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+
+.section-obras-maestras h2 {
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.obras-maestras {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.obras-maestras article {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.obras-maestras article img {
+    width: 150px;
+    height: auto;
+}
+
+article p {
+    margin-top: 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+aside {
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: calc(20% - 41px);
+    background-color: #FFFFFF77;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 5px;
+    margin: 15px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#fuentes li {
+    margin-top: 55px;
+}
+
+#fuentes li a {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    main{
+        width: 100%;
+    }
+    
+}
