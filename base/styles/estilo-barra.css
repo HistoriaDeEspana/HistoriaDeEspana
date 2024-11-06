@@ -1,11 +1,13 @@
 :root {
-    --primary-bg-color: #9dc19d;
-    --secondary-bg-color: #d3d5b0;
-    --text-color: #50302cf7;
-    --link-color: white;
-    --link-hover-color: #ac956f;
-    --footer-hover-color: #443829;
+    --primary-bg-color: #bcc1cf; /* Crema pálido, como papel antiguo */
+    --secondary-bg-color: #dfdfdf; /* Marrón grisáceo, para un contraste sutil */
+    --text-color: #d1b01d; /* Marrón oscuro, imitando tinta antigua */
+    --link-color: #d2b947; /* Marrón suave, que recuerda a cuero envejecido */
+    --link-hover-color: #9aa1b5; /* Dorado suave para hover en enlaces */
+    --footer-hover-color: #9aa1b5; /* Marrón oscuro profundo para hover en el footer */
 }
+
+
 
 html, body {
     height: 100%;
@@ -137,11 +139,12 @@ main {
 #footer_section {
     background-color: var(--primary-bg-color);
     color: var(--link-color);
-    padding: 20px;
+    padding: 10px 15px; /* Reducir el padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 14px; /* Disminuir el tamaño de la fuente */
 }
 
 #footer_section nav {
@@ -162,7 +165,7 @@ main {
 #footer_section ul li a {
     color: var(--link-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 2px 2px;
     transition: color 0.3s ease;
 }
 
@@ -171,7 +174,7 @@ main {
 }
 
 .pie_pagina {
-    font-size: small;
+    font-size: 12px;
     text-align: right;
     margin-left: auto;
     flex-grow: 1;
@@ -205,5 +208,5 @@ iframe {
 }
 
 #frame_pie-pagina {
-    height: 120px;
+    height: 6em;
 }
