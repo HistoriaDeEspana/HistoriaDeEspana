@@ -1,10 +1,10 @@
 :root {
-    --primary-bg-color: #bcc1cf; /* Crema pálido, como papel antiguo */
-    --secondary-bg-color: #dfdfdf; /* Marrón grisáceo, para un contraste sutil */
-    --text-color: #d1b01d; /* Marrón oscuro, imitando tinta antigua */
-    --link-color: #d2b947; /* Marrón suave, que recuerda a cuero envejecido */
-    --link-hover-color: #9aa1b5; /* Dorado suave para hover en enlaces */
-    --footer-hover-color: #9aa1b5; /* Marrón oscuro profundo para hover en el footer */
+    --primary-bg-color: #bcc1cf; 
+    --secondary-bg-color: #dfdfdf; 
+    --text-color: #d1b01d; 
+    --link-color: #d2b947; 
+    --link-hover-color: #9aa1b5; 
+    --footer-hover-color: #9aa1b5; 
 }
 
 
@@ -139,12 +139,12 @@ main {
 #footer_section {
     background-color: var(--primary-bg-color);
     color: var(--link-color);
-    padding: 10px 15px; /* Reducir el padding */
+    padding: 10px 15px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 14px; /* Disminuir el tamaño de la fuente */
+    font-size: 14px; 
 }
 
 #footer_section nav {
