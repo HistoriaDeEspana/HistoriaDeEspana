@@ -1,41 +1,26 @@
-<link rel="stylesheet" href="styles/estilo-barra.css">
+<link rel="stylesheet" href="./styles/style.css">
 
-<header id="barra-top">
-    <nav aria-label="Main navigation">
-        <a id="logo-link"><img src="img/logo.png" height="50" alt="Logo HistoriaDeExtremadura"></a>
-        <ul>
-            <li class="epocas-menu"><a href="#">Secciones</a>
-                <ul id="botonesEscondidos">
-                    <li>
-                        <button 
-                            style="background: none; border: none;"
-                            onclick="parent.frameInicioContenido.location='../arqueologia/content/index.html'">
-                            <a>Arqueologia</a>
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            style="background: none; border: none;"
-                            onclick="parent.frameInicioContenido.location='../arte/content/index.html'">
-                            <a>Arte</a>
-                        </button>
-                    </li>
-                    <li>
-                        <button 
-                            style="background: none; border: none;"
-                            onclick="parent.frameInicioContenido.location='../antropologia/content/index.html'">
-                            <a>Antropología</a>
-                        </button>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <button 
-                    style="background: none; border: none;"
-                    onclick="parent.frameInicioContenido.location='../galeria/content/index.html'">
-                    <a>Galeria</a>
-                </button>
-            </li>
-        </ul>
-    </nav>
-</header>
+<nav>
+    <a id="logo">
+        <img src="img/logo.png" height="50" alt="Logo HistoriaDeExtremadura">
+    </a>
+    <label for="toggle-nav" id="nav-secciones">Secciones</label>
+    <div id="nav-botones">
+        <button 
+            onclick="parent.frameInicioContenido.location='../arqueologia/content/index.html'">
+            <a>Arqueologia</a>
+        </button>
+        <button
+            onclick="parent.frameInicioContenido.location='../arte/content/index.html'">
+            <a>Arte</a>
+        </button>
+        <button 
+            onclick="parent.frameInicioContenido.location='../antropologia/content/index.html'">
+            <a>Antropología</a>
+        </button>
+        <button
+            onclick="parent.frameInicioContenido.location='../galeria/content/index.html'">
+            <a>Galeria</a>
+        </button>
+    </div>
+</nav>

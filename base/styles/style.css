@@ -1,0 +1,111 @@
+@import url('./colors.css');
+
+html, body, .iframe-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    border: none;
+}
+
+/* Frame de la cabecera */
+#frame_cabecera {
+    height: 80px;
+    width: 100%;
+    background-color: #B3B3B3;
+}
+
+nav {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav * {
+    width: fit-content;
+}
+
+nav button {
+    border: none;
+    background: none;
+}
+
+#nav-secciones {
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* Estilos iniciales del menú oculto */
+#nav-botones {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 80px;
+    left: 0;
+    background-color: #B3B3B3;
+    padding: 10px;
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#toggle-nav:checked + nav #nav-botones {
+    display: flex;
+    animation: mostrar 0.5s forwards;
+}
+
+/* Animación del menú */
+@keyframes mostrar {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Frame del cuerpo */
+#frame_cuerpo {
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Frame del pie */
+#frame_pie {
+    width: 100%;
+    height: 80px;
+    background-color: #B3B3B3;
+}
+
+footer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > div > * {
+    margin: 10px;
+    border: none;
+    background: none;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer > p {
+    margin: 10px;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+}
