@@ -9,9 +9,31 @@
         <link rel="icon" href="./base/img/cardo-icon.ico" type="image/x-icon">
     </head>
 
-    <body>
+    <body id="base">
         <div class="iframe-container">
-            <iframe id="frame_cabecera" scrolling="no" src="./base/header.html"></iframe>
+            <nav>
+                <a id="logo" >
+                    <img src="./base/img/logo.png" height="50" alt="Logo HistoriaDeExtremadura">
+                </a>
+                <div id="nav-botones">
+                    <button 
+                        onclick="parent.frameInicioContenido.location='./arqueologia/content/index.html'">
+                        <a>Arqueologia</a>
+                    </button>
+                    <button
+                        onclick="parent.frameInicioContenido.location='./arte/content/index.html'">
+                        <a>Arte</a>
+                    </button>
+                    <button 
+                        onclick="parent.frameInicioContenido.location='./antropologia/content/index.html'">
+                        <a>Antropología</a>
+                    </button>
+                    <button
+                        onclick="parent.frameInicioContenido.location='./galeria/content/index.html'">
+                        <a>Galeria</a>
+                    </button>
+                </div>
+            </nav>
             <iframe id="frame_cuerpo" name="frameInicioContenido" src="./inicio.html"></iframe>
             <iframe id="frame_pie" scrolling="no" src="./base/footer.html"></iframe>
         </div>

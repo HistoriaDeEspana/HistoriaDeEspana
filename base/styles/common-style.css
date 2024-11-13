@@ -1,0 +1,20 @@
+/* Objetos comunes */
+
+aside
+{
+    background-color: rgba(240, 248, 255, 0.527) !important;
+    min-width: 250px !important;
+}
+main
+{
+    background-color: rgba(240, 248, 255, 0.527) !important;
+}
+
+@media screen and (width > 600px) 
+{
+    main
+    {
+        margin-left: 10px;
+        
+    }
+}

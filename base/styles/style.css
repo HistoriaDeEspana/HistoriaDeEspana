@@ -1,5 +1,13 @@
 @import url('./colors.css');
 
+#base
+{
+    background-image: url('../img/back.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html, body, .iframe-container {
     width: 100%;
     height: 100%;
@@ -13,24 +21,20 @@ iframe {
     border: none;
 }
 
-/* Frame de la cabecera */
-#frame_cabecera {
-    height: 80px;
-    width: 100%;
-    background-color: #B3B3B3;
-}
-
 nav {
-    height: 100%;
-    padding: 10px;
+    height: fit-content;
+    width: 100%;
+    background: rgb(188,193,207);
+    background: linear-gradient(90deg, rgba(188,193,207,1) 0%, rgba(188,193,207,0.7959384437368697) 41%, rgba(188,193,207,0.5970588919161415) 88%); 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-nav * {
+nav > * {
     width: fit-content;
+    margin: 10px;
 }
 
 nav button {
@@ -38,39 +42,21 @@ nav button {
     background: none;
 }
 
-#nav-secciones {
-    cursor: pointer;
-    font-size: medium;
-    font-weight: bold;
-}
-
 /* Estilos iniciales del menú oculto */
 #nav-botones {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    top: 80px;
-    left: 0;
-    background-color: #B3B3B3;
-    padding: 10px;
-}
-
-/* Mostrar el menú cuando el checkbox está marcado */
-#toggle-nav:checked + nav #nav-botones {
     display: flex;
-    animation: mostrar 0.5s forwards;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/* Animación del menú */
-@keyframes mostrar {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+#nav-botones > *
+{
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    color: var(--secondary-bg-color);
+    font-size: medium;
+    font-weight: bold;
 }
 
 /* Frame del cuerpo */
@@ -83,7 +69,7 @@ nav button {
 #frame_pie {
     width: 100%;
     height: 80px;
-    background-color: #B3B3B3;
+    background-color: var(--primary-bg-color);
 }
 
 footer {
