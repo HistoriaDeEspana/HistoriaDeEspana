@@ -37,9 +37,22 @@ nav > * {
     margin: 10px;
 }
 
+button {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button:hover{
+    color: var(--link-color);
+}
+
 nav button {
     border: none;
     background: none;
+}
+
+#nav-botones > button:hover {
+    color: var(--link-color);
 }
 
 /* Estilos iniciales del menú oculto */
