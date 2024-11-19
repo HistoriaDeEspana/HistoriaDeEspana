@@ -7,6 +7,11 @@ html, body {
     flex-direction: column;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen and (width > 600px) 
 {
     body {
@@ -46,45 +51,55 @@ html, body {
     }
 }
 
-img{
-    max-width: 150px;
+nav 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-aside {
-    height: 100%;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-aside ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-aside ul li {
-    margin: 15px 0;
+nav ul li {
+    margin-bottom: 10px;
 }
 
-aside ul li a {
+nav ul li a {
+    color: #35424a;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    transition: color 0.3s;
 }
 
-main{
-    background-color: transparent;
+nav ul li a:hover {
+    color: #c6a200;
 }
 
-section {
-    margin-left: 220px;
+main {
+    flex: 1;
     padding: 20px;
-    max-width: 1000px;
 }
 
-section h2 {
-    margin-top: 0;
+h2 {
+    color: #35424a;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
 }
 
-section img {
-    float: right; /* Coloca la imagen a la derecha */
-    margin: 10px;
+h3 {
+    color: #35424a;
 }
+
+p {
+    margin-bottom: 15px;
+}
+
+.identidades h3{
+    font-size: 25px;
+
+}
+img {
+    max-width: 150px;
+  }
