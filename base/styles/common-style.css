@@ -1,9 +1,16 @@
 /* Objetos comunes */
 
+body
+{
+    display: flex;
+}
+
 aside
 {
-    background-color: rgba(240, 248, 255, 0.527) !important;
-    min-width: 250px !important;
+    width: 250px;
+    background-color: #FFFFFF77;
+    padding: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
 }
 main
 {
@@ -12,9 +19,30 @@ main
 
 @media screen and (width > 600px) 
 {
+
+
     main
     {
         margin-left: 10px;
-        
+        padding: 10px;        
+    }
+}
+
+@media screen and (width < 600px) 
+{
+    body
+    {
+        flex-wrap: wrap;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        margin-top: 10px;
+        padding: 10px;        
     }
 }
