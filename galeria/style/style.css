@@ -1,28 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
+*{
     font-family: "Quicksand", sans-serif;
 }
 
-body {
-    width: calc(100% - 2px);
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
+body{
+    display: flex;
+    flex-direction: row; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
 .container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
-    width: calc(80% - 24px);
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-    float: right;
+    flex: 1; 
+    overflow-y: auto; 
+    padding: 20px; 
 }
 
+@media screen and (width > 600px) 
+{
+    body {
+        min-width: 550px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+    }
+    aside {
+        margin: 0;
+        padding: 20px;
+        width: 250px;
+    }
+    main {
+        overflow-y: scroll;
+        height: 100vh;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (width < 600px) 
+{
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    aside
+    {
+        padding: 0 20px;
+        height: fit-content;
+        width: 100%;
+    }
+    nav
+    {
+        justify-content: space-around;        
+    }
+}
+
+aside{
+    background-color: #FFFFFF77;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 5px;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* aside {
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: calc(20% - 41px);
+    background-color: #FFFFFF77;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 5px;
+    margin: 15px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+} */
 
 .section-obras-maestras h2 {
     margin-top: 25px;
@@ -57,49 +162,4 @@ article p {
     margin-top: 25px;
     font-style: italic;
     text-decoration: underline;
-}
-
-aside {
-    position: fixed;
-    float: left;
-    height: 100%;
-    width: calc(20% - 41px);
-    background-color: #FFFFFF77;
-    padding: 20px;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-aside ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-aside ul li {
-    padding: 5px;
-    margin: 15px;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-#fuentes li {
-    margin-top: 55px;
-}
-
-#fuentes li a {
-    text-decoration: none;
-}
-@media (max-width: 768px) {
-    aside {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    main{
-        width: 100%;
-    }
-    
 }
